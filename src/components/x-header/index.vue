@@ -187,4 +187,72 @@ export default {
     transform: translateX(0);
   }
 }
+
+/* Andy add */
+
+.vux-header {
+  background-color: #3B435B;
+}
+.vux-header .vux-header-left,.vux-header .vux-header-right {
+  top: 19px;
+}
+.vux-header .vux-header-title{
+  height: 50px;
+  line-height: 50px;
+}
+.mainContainer{
+  position: absolute;
+  background-color: #3B435B;
+  padding: 18px;
+  border-radius: 10px;
+  top: 66px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.homeContainer{
+  position: absolute;
+  background-color: #2C2F34;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.homeContainer .weui-cells:before{
+  border: none;
+}
+.homeContainer .weui-cells:after{
+  border: none;
+}
+.homeContainer .weui-cells{
+  background-color: inherit;
+}
+.homeContainer .weui-input{
+  color: #fff;
+}
+.homeContainer .vux-x-input{
+  background-color: #373B4E;
+}
+div.mainButton .weui-btn_primary{
+  background-color: #E6863E;
+}
+div.securityCode .weui-btn_primary{
+  border-radius: 10px;
+  line-height: 2.3;
+  background-color: transparent;
+  border: 1px solid #E6863E;
+  color: #E6863E;
+}
+div.securityCode .vux-flexbox-item:first-child{
+  padding-right: 10px;
+}
+div.securityCode .weui-cells>.weui-cell{
+  margin-bottom: 18px;
+}
+div.agreementCheck{
+  color: #fff;
+}
+div.agreementCheck a{
+  color: #DBAA83;
+}
 </style>
