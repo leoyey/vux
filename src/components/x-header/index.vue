@@ -200,16 +200,6 @@ export default {
   height: 50px;
   line-height: 50px;
 }
-.mainContainer{
-  position: absolute;
-  background-color: #3B435B;
-  padding: 18px;
-  border-radius: 10px;
-  top: 66px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-}
 .homeContainer{
   position: absolute;
   background-color: #2C2F34;
@@ -217,6 +207,27 @@ export default {
   left:0;
   right:0;
   bottom:0;
+}
+.frontContainer{
+  position: absolute;
+  background-color: #3B435B;
+  padding: 18px;
+  border-radius: 10px;
+  left: 20px;
+  right: 20px;
+}
+.frontContainer.main{
+  top: 66px;
+  bottom: 20px;
+}
+.frontContainer.account{
+  top: 16px;
+  color: #fff;
+}
+.frontContainer.transfer{
+  top: 250px;
+  bottom: 0;
+  border-radius: 10px 10px 0 0;
 }
 .homeContainer .weui-cells:before{
   border: none;
