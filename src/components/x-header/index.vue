@@ -229,10 +229,22 @@ export default {
   bottom: 0;
   border-radius: 10px 10px 0 0;
 }
+.tabContainer{
+  position: absolute;
+  background-color: #3B435B;
+  padding: 28px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 110px;
+}
 .homeContainer .weui-cells:before{
   border: none;
 }
 .homeContainer .weui-cells:after{
+  border: none;
+}
+.homeContainer .weui-cell:before{
   border: none;
 }
 .homeContainer .weui-cells{
@@ -243,6 +255,24 @@ export default {
 }
 .homeContainer .vux-x-input{
   background-color: #373B4E;
+}
+.homeContainer div.textarea{
+  background-color: #373B4E;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+.homeContainer textarea{
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  height: 100px;
+  color: #fff;
+  font-size: inherit;
+  resize: none;
+  overflow: scroll;
+}
+.homeContainer textarea:focus{
+  outline: none;
 }
 div.mainButton .weui-btn_primary{
   background-color: #E6863E;
@@ -257,7 +287,7 @@ div.securityCode .weui-btn_primary{
 div.securityCode .vux-flexbox-item:first-child{
   padding-right: 10px;
 }
-div.securityCode .weui-cells>.weui-cell{
+.weui-cells>.weui-cell{
   margin-bottom: 18px;
 }
 div.agreementCheck{
@@ -265,5 +295,71 @@ div.agreementCheck{
 }
 div.agreementCheck a{
   color: #DBAA83;
+}
+.notice{
+  color: #E6863E;
+  text-decoration-line: underline;
+  font-size: 11px;
+  padding: 4px;
+}
+.tabSwitch{
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+}
+.tabSwitch div{
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 35px;
+  background-color: #363A4C;
+  color: #BDC7C4;
+  position:relative;
+}
+.tabSwitch div.active{
+  background-color: #3B435B;
+  color: #fff;
+}
+.tabSwitch div:before{
+  content:'';
+  display:block;
+  width:35px;
+  height:50px;
+  position:absolute;
+  transform:skewX(-10deg);
+  background: inherit;
+  border-top-left-radius:5px;
+  left:-30px;
+  top:0;
+}
+.tabSwitch div:after{
+  content:'';
+  display:block;
+  width:35px;
+  height:50px;
+  position:absolute;
+  transform:skewX(10deg);
+  background: inherit;
+  border-top-right-radius:5px;
+  top:0;
+  right:-30px;
+}
+.tokenIcon{
+  position: relative;
+}
+.tokenIcon img{
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.tokenIcon div{
+  color: #BDC7C4;
+  position: absolute;
+  top: 13px;
+  left: 50px;
 }
 </style>
