@@ -362,4 +362,102 @@ div.agreementCheck a{
   top: 13px;
   left: 50px;
 }
+
+
+/* 个人中心 */
+
+.floatContainer{
+  position: relative;
+  background-color: #3B435B;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+}
+.floatContainer.infoUp{
+  margin-top: 50px;
+  padding-top: 40px;
+}
+.floatContainer.infoUp div{
+  color: #fff;
+  word-break: break-all;
+  position: relative;
+}
+.floatContainer.infoUp .help{
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+}
+.floatContainer.infoUp .userPhone{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.floatContainer.infoUp .userId{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.floatContainer.infoUp .userWallet{
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 45px;
+}
+.floatContainer.infoUp .editor{
+  position: absolute;
+  width: 22px;
+  top: 3px;
+  margin-left: 25px;
+}
+.floatContainer.infoUp .share{
+  position: absolute;
+  width: 22px;
+  top: 50%;
+  margin-top: -11px;
+  margin-left: 20px;
+}
+.floatContainer.infoUp .userWallet .share{
+  right: 7%;
+}
+.floatContainer.infoDown{
+  padding: 0;
+}
+.floatContainer.infoDown ul>li{
+  list-style: none;
+  display: flex;
+  color: #fff;
+  padding: 18px;
+  position: relative;
+}
+.floatContainer.infoDown ul>li img{
+  width: 18px;
+  height: 18px;
+  margin-right: 16px;
+}
+.floatContainer.infoDown ul>li span{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.floatContainer.infoDown ul>li span:nth-child(2){
+  width: 110px;
+}
+.floatContainer.infoDown ul>li span:last-child{
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  right: 4%;
+}
+.homeContainer>.mainButton{
+  margin: 0 15px;
+}
+.homeAvatar{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: -35px;
+  left: 50%;
+  margin-left: -35px;
+
+}
 </style>
