@@ -419,6 +419,24 @@ div.agreementCheck a{
 .floatContainer.infoUp .userWallet .share{
   right: 7%;
 }
+.floatContainer.infoMid{
+  display: flex;
+}
+.floatContainer.infoMid img{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.floatContainer.infoMid span{
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+}
+.floatContainer.infoMid span:last-child{
+  flex:1;
+  text-align: right;
+}
 .floatContainer.infoDown{
   padding: 0;
 }
