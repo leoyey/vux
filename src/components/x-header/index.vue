@@ -301,6 +301,7 @@ div.agreementCheck a{
   text-decoration-line: underline;
   font-size: 10px;
   padding: 4px;
+  text-align: left;
 }
 .notice.center, .notice.center p{
   text-align: center;
