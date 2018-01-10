@@ -299,8 +299,11 @@ div.agreementCheck a{
 .notice{
   color: #E6863E;
   text-decoration-line: underline;
-  font-size: 11px;
+  font-size: 10px;
   padding: 4px;
+}
+.notice.center, .notice.center p{
+  text-align: center;
 }
 .tabSwitch{
   position: absolute;
