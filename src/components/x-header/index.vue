@@ -224,11 +224,6 @@ export default {
   top: 16px;
   color: #fff;
 }
-.frontContainer.transfer{
-  top: 250px;
-  bottom: 0;
-  border-radius: 10px 10px 0 0;
-}
 .tabContainer{
   position: absolute;
   background-color: #3B435B;
@@ -274,8 +269,12 @@ export default {
 .homeContainer textarea:focus{
   outline: none;
 }
-div.mainButton .weui-btn_primary{
+div.mainButton .weui-btn{
   background-color: #E6863E;
+  color: #fff;
+}
+div.mainButton .weui-btn.weui-btn_disabled{
+  opacity: 0.6;
 }
 div.securityCode .weui-btn_primary{
   border-radius: 10px;
@@ -413,7 +412,7 @@ div.agreementCheck a{
   top: 3px;
   margin-left: 25px;
 }
-.floatContainer.infoUp .share{
+.floatContainer.infoUp .share, .frontContainer.account .share{
   position: absolute;
   width: 22px;
   top: 50%;
@@ -481,5 +480,170 @@ div.agreementCheck a{
   left: 50%;
   margin-left: -35px;
 
+}
+
+/* 个人钱包 */
+
+.frontContainer.account .avatar img{
+  margin: 10px auto auto 0;
+}
+.frontContainer.account>div{
+  text-align: center;
+}
+.frontContainer.account .userId{
+  position: relative;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.frontContainer.account .mainButton{
+  margin-top: 20px;
+  padding: 5px 30px;
+}
+.frontContainer.account .mainButton button{
+  font-size: 15px;
+}
+.frontContainer.account .tokenInfo {
+  display: flex;
+  padding-bottom: 5px;
+}
+.frontContainer.account .tokenInfo img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.frontContainer.account .tokenInfo span{
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  line-height: 30px;
+}
+.frontContainer.account .tokenInfo span:last-child{
+  flex:1;
+  text-align: right;
+  font-size: 16px;
+  color: #E6863E;
+}
+
+
+
+
+
+
+.frontContainer.transfer{
+  top: 230px;
+  bottom: 0;
+  padding-top: 10px;
+  border-radius: 10px 10px 0 0;
+}
+.frontContainer.transfer ul>li{
+  display: flex;
+  color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #4C5469;
+}
+.frontContainer.transfer ul>li:last-child{
+  border-bottom: none;
+}
+.frontContainer.transfer ul>li div{
+  line-height: 30px;
+  font-size: 14px;
+}
+.frontContainer.transfer ul>li div:last-child{
+  flex: 1;
+  text-align: right;
+}
+.frontContainer.transfer ul>li img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.homeContainer .transferCover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #3B3E4E;
+  min-height: 100%;
+  display: flex;
+}
+.homeContainer .transferCover .leftHandle{
+  flex: 0 0 20%;
+  background-color: #B4B6BC;
+}
+.homeContainer .transferCover .main{
+  position: relative;
+  flex: 0 0 80%;
+}
+.transferCover .main>ul>li{
+  list-style: none;
+  display: flex;
+  color: #fff;
+  background-color: #4A546D;
+  padding: 20px 0;
+  border-bottom: 1px solid #4C5469;
+}
+.transferCover .main>ul>li img{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.transferCover header{
+  color: #fff;
+  background-color: #3D4865;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.transferCover header span{
+  display: block;
+  position: absolute;
+  padding-right: 10px;
+  right: 0;
+  top: 15px;
+}
+.transferCover .targetInfo div:first-child{
+  font-size: 10px;
+  color: #fff;
+}
+.transferCover .targetInfo div:last-child{
+  font-size: 10px;
+  color: #9DA6AB;
+}
+.transferCover .main .amountInfo{
+  flex: 1;
+  font-size: 10px;
+  text-align: right;
+  padding-right: 5px;
+}
+.transferCover .main .mainButton{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+.homeContainer .transferCoverWindow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0);
+  z-index: 20;
+}
+.homeContainer .transferCoverWindow>div{
+  background-color: #3A435B;
+  margin: 80px auto 0 auto;
+  width: 80%;
+}
+.homeContainer .transferCoverWindow header{
+  color: #fff;
+  font-size: 14px;
+  background-color: #3D4865;
+  line-height: 35px;
 }
 </style>
