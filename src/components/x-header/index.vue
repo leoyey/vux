@@ -210,7 +210,6 @@ export default {
 }
 .homeContainer .row{
   display: flex;
-  margin: 5px 0;
 }
 .homeContainer .row>span{
   display: block;
@@ -305,6 +304,19 @@ div.agreementCheck{
 }
 div.agreementCheck a{
   color: #DBAA83;
+}
+div.agreementCheck .weui-cells{
+  font-size: 14px;
+}
+div.paymentCheck .weui-cells{
+  color: #eee;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+}
+div.paymentCheck .weui-cells>label{
+  flex: 1;
+  text-align: center;
 }
 .notice{
   color: #E6863E;
@@ -634,9 +646,6 @@ div.agreementCheck a{
   right: 0;
 }
 
-
-
-
 .homeContainer .dialogWindow{
   position: fixed;
   top: 0;
@@ -767,5 +776,48 @@ div.agreementCheck a{
   text-align: right;
 }
 
+  /* 支付页面 */
+.homeContainer .payTitle h1:first-child{
+  color: #eee;
+  font-size: 20px;
+  flex: 1;
+}
+.homeContainer .payTitle h1:last-child{
+  color: #F3B992;
+  font-size: 20px;
+}
+.homeContainer .payTitle{
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3F4C66;
+}
+.homeContainer .advertise h2{
+  color: #eee;
+  font-size: 19px;
+}
+.homeContainer .advertise{
+  margin: 10px 0;
+}
+.homeContainer .advBlocks div{
+  flex: 1;
+}
+.homeContainer .advBlocks div>p{
+  border: 1px solid #615251;
+  border-radius: 3px;
+  color: #eee;
+  font-size: 12px;
+  padding: 4px 12px;
+  width: 65px;
+  height: 82%;
+  margin: 0 auto;
+}
+.homeContainer .advBlocks div:nth-child(2){
 
+}
+.homeContainer .promotionCode{
+  margin-top: 10px;
+}
+.homeContainer .codeWarnings{
+  color: #929B9F;
+  font-size: 13px;
+}
 </style>
