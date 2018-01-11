@@ -208,6 +208,17 @@ export default {
   right:0;
   bottom:0;
 }
+.homeContainer .row{
+  display: flex;
+  margin: 5px 0;
+}
+.homeContainer .row>span{
+  display: block;
+}
+.homeContainer select{
+  background-color: #373B4E;
+  border: none;
+}
 .frontContainer{
   position: absolute;
   background-color: #3B435B;
@@ -266,7 +277,7 @@ export default {
   resize: none;
   overflow: scroll;
 }
-.homeContainer textarea:focus{
+.homeContainer textarea:focus, .homeContainer select:focus{
   outline: none;
 }
 div.mainButton .weui-btn{
@@ -626,24 +637,135 @@ div.agreementCheck a{
 
 
 
-.homeContainer .transferCoverWindow{
+.homeContainer .dialogWindow{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,0);
-  z-index: 20;
+  z-index: 50;
 }
-.homeContainer .transferCoverWindow>div{
+.dialogWindow>section{
   background-color: #3A435B;
+  border-radius: 5px;
+  overflow: hidden;
   margin: 80px auto 0 auto;
   width: 80%;
 }
-.homeContainer .transferCoverWindow header{
+.dialogWindow .main{
+  padding: 0 10px;
+}
+.dialogWindow .main.transferInfo{
+  padding: 0 25px 25px 25px;
+}
+.dialogWindow .main.transferInit>div{
+  margin:10px 0;
+}
+.dialogWindow .main.transferInit>div:last-child{
+  margin-bottom: 5px;
+}
+.dialogWindow .main.transferInfo .summary{
+  color: #fff;
+  position: relative;
+}
+.dialogWindow .main.transferInfo .summary img{
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+}
+.dialogWindow .main.transferInfo .summary div{
+  margin-right: auto;
+  margin-left: 5px;
+  line-height: 20px;
+}
+.dialogWindow .transferInfo .partyInfo div:first-child{
+  color: #C8D2CE;
+  font-size: 15px;
+}
+.dialogWindow .transferInfo .partyInfo div:nth-child(2){
+  -ms-word-break: break-all;
+  word-break: break-all;
+  flex: 1;
+}
+.dialogWindow .transferInfo .partyInfo span{
+  display: block;
+}
+.dialogWindow .transferInfo .partyInfo span:first-child{
   color: #fff;
   font-size: 14px;
+  line-height: 16px;
+  padding-top: 4px;
+}
+.dialogWindow .transferInfo .partyInfo span:nth-child(2){
+  color: #757575;
+  font-size: 12px;
+}
+.dialogWindow .transferInfo .details{
+  color: #909AA0;
+  font-size: 12px;
+  line-height: 13px;
+}
+.dialogWindow .transferInfo .details span:last-child{
+  flex: 1;
+  text-align: right;
+}
+.dialogWindow .transferInfo .details .verify{
+  color: inherit;
+  padding: 2px 16px;
+  font-size: 10px;
+  border: 1px solid #8E654E;
+  border-radius: 3px;
+}
+.dialogWindow header{
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px;
   background-color: #3D4865;
   line-height: 35px;
+  position: relative;
 }
+.dialogWindow header .close{
+  position: absolute;
+  right: 5px;
+}
+.dialogWindow .mainButton button{
+  border-radius: unset;
+}
+.dialogWindow .targetId img{
+  width: 30px;
+  height: 30px;
+  margin: 6px;
+}
+.dialogWindow .targetId .vux-x-input{
+  flex: 1;
+}
+
+.dialogWindow .nickName img{
+  width: 35px;
+  height: 35px;
+}
+.dialogWindow .amount .vux-x-input{
+  flex: 1;
+}
+.dialogWindow .amount select{
+  margin-left: 10px;
+  color: #757575;
+  min-width: 70px;
+  padding-left: 5px;
+}
+.dialogWindow .serviceCharge{
+  padding: 0 10px;
+  color: #8F989D;
+}
+.dialogWindow .serviceCharge span{
+  display: block;
+  font-size: 12px;
+}
+.dialogWindow .serviceCharge span:last-child{
+  flex:1;
+  text-align: right;
+}
+
+
 </style>
