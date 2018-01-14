@@ -144,23 +144,28 @@
   border-radius: 8px;
 }
 .weui-dialog .dialogHeader{
-  display: flex;
-  position: relative;
-  padding: 0 10px;
   color: #fff;
+  font-size: 14px;
+  display: flex;
+  background-color: #3D4865;
+  line-height: 35px;
+  position: relative;
+  padding: 8px;
 }
-.weui-dialog .dialogHeader img{
-  width: 30px;
-  height: 30px;
-}
-.weui-dialog .dialogHeader span{
+.weui-dialog .dialogHeader span,
+.weui-dialog .dialogHeader a{
   display: block;
-  line-height: 50px;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 10px;
 }
 .weui-dialog .dialogHeader span.close{
   position: absolute;
-  top: 0;
-  right: 10px;
+  right: 0;
+  width: 16px;
+  background: url('/static/img/close.png') center no-repeat;
+  background-size: 16px;
+  color: #fff;
 }
 .weui-dialog .dialogBody{
   padding: 10px;
