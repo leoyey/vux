@@ -121,7 +121,7 @@
 
       <icon @click.native="onClickErrorIcon" class="vux-input-icon" type="warn" :title="!valid ? firstError : ''" v-show="showWarn"></icon>
       <icon @click.native="onClickErrorIcon" class="vux-input-icon" type="warn" v-if="!novalidate && hasLengthEqual && dirty && equalWith && !valid"></icon>
-      
+
       <icon type="success" v-show="!novalidate && equalWith && equalWith === currentValue && valid"></icon>
 
       <icon type="success" class="vux-input-icon" v-show="novalidate && iconType === 'success'"></icon>
@@ -522,6 +522,8 @@ export default {
 }
 .vux-x-input .weui-icon {
   padding-left: 5px;
+  /* andy */
+  /*display: none;*/
 }
 .vux-x-input.weui-cell_vcode {
   padding-top: 0;
