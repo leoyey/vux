@@ -3,7 +3,8 @@
     class="vux-x-dialog"
     :class="{'vux-x-dialog-absolute': layout === 'VIEW_BOX'}">
     <transition :name="maskTransition">
-      <div class="weui-mask" @click="hide" v-show="show" :style="maskStyle"></div>
+      <div class="weui-mask" v-show="show" :style="maskStyle"></div>
+      <!--<div class="weui-mask" @click="hide" v-show="show" :style="maskStyle"></div>-->
     </transition>
     <transition :name="dialogTransition">
       <div :class="dialogClass" v-show="show" :style="dialogStyle">
