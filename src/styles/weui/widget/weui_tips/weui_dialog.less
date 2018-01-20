@@ -15,23 +15,34 @@
     overflow: hidden;
 }
 .weui-dialog__hd {
-    padding: 1.3em @weuiDialogGapWidth .5em;
+    //padding: 1.3em @weuiDialogGapWidth .5em;
+    padding: 0 14px;
+    background-color: #403E3C;
     &.with-no-content {
       padding: 1.7em @weuiDialogGapWidth;
     }
 }
 .weui-dialog__title {
-    font-weight: 400;
-    font-size: 18px;
+    //font-weight: 400;
+    //font-size: 18px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 300;
 }
 .weui-dialog__bd {
-    padding: 0 @weuiDialogGapWidth .8em;
-    min-height: 40px;
-    font-size: 15px;
-    line-height: 1.3;
+    //padding: 0 @weuiDialogGapWidth .8em;
+    padding: 18px 10px;
+    //min-height: 40px;
+    //font-size: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    //line-height: 1.3;
+    line-height: 18px;
     word-wrap: break-word;
     word-break: break-all;
-    color: @weuiTextColorGray;
+    //color: @weuiTextColorGray;
+    color: #fff;
     &:first-child{
         padding:2.7em 20px 1.7em;
         color:#353535;
@@ -39,8 +50,9 @@
 }
 .weui-dialog__ft {
     position: relative;
-    line-height: 48px;
-    font-size: 18px;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: 300;
     display: flex;
     &:after {
         content: " ";
@@ -58,10 +70,10 @@
     }
 
     position: relative;
-    &:after {
-        content: " ";
-        .setLeftLine(@weuiDialogLineColor);
-    }
+    //&:after {
+    //    content: " ";
+    //    .setLeftLine(@weuiDialogLineColor);
+    //}
     &:first-child {
         &:after {
             display: none;
@@ -191,7 +203,11 @@
 }
 .weui-dialog__btn{
   color: #fff;
-  background-color: #E6863E;
+  //background-color: #E6863E;
+  background-color: #DAB46A;
+}
+.weui-dialog__btn.cancel{
+  background-color: #403E3C;
 }
 .weui-dialog__ft:after{
   border: none;
