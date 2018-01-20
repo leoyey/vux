@@ -46,9 +46,9 @@ export default {
 @import '../../styles/weui/widget/weui_cell/weui_cell_global';
 @import '../../styles/blank.less';
 
-.vux-no-group-title {
+/*.vux-no-group-title {
   margin-top: @group-title-margin-top;
-}
+}*/
 
 /* global config for group items */
 .vux-cell-value {

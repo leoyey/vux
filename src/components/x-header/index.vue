@@ -87,15 +87,16 @@ export default {
 
 .vux-header {
   position: relative;
-  padding: 3px 0;
+  padding: 2px 0;
   box-sizing: border-box;
-  background-color: @header-background-color;
+  background-color: #383735;
+  /*background-color: @header-background-color;*/
 }
 .vux-header .vux-header-title {
   line-height: 40px;
   text-align: center;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   color: @header-title-color;
 }
 .vux-header-title-area, .vux-header .vux-header-title {
@@ -141,8 +142,8 @@ export default {
   &:before {
     content: "";
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border: 1px solid @header-arrow-color;
     border-width: 1px 0 0 1px;
     transform: rotate(315deg);
