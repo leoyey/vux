@@ -333,5 +333,6 @@ function pure (obj) {
 <style>
 .xs-plugin-pullup-container {
   text-align: center;
+  color: #fff;
 }
 </style>
