@@ -10,7 +10,7 @@
       :data-index="index">
         <a href="javascript:">
           <div class="vux-img" :style="{backgroundImage: buildBackgroundUrl(item)}"></div>
-          <p class="vux-swiper-desc" v-if="showDescMask">{{ item.title }}</p>
+          <!--<p class="vux-swiper-desc" v-if="showDescMask">{{ item.title }}</p>-->
         </a>
       </div>
 
@@ -22,7 +22,7 @@
       :data-index="index">
         <a href="javascript:">
           <div class="vux-img" :style="{backgroundImage: buildBackgroundUrl(item)}"></div>
-          <p class="vux-swiper-desc" v-if="showDescMask">{{ item.title }}</p>
+          <!--<p class="vux-swiper-desc" v-if="showDescMask">{{ item.title }}</p>-->
         </a>
       </div>
 
