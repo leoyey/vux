@@ -15,25 +15,44 @@ import Pulldown from 'vux-xscroll/build/cmd/plugins/pulldown'
 import Pullup from 'vux-xscroll/build/cmd/plugins/pullup'
 
 const pulldownDefaultConfig = () => ({
-  content: 'Pull Down To Refresh',
+  content: '下啦刷新',
   height: 60,
   autoRefresh: false,
-  downContent: 'Pull Down To Refresh',
-  upContent: 'Release To Refresh',
-  loadingContent: 'Loading...',
+  downContent: '下啦刷新',
+  upContent: '松开刷新',
+  loadingContent: '刷新中...',
   clsPrefix: 'xs-plugin-pulldown-'
 })
+// const pulldownDefaultConfig = () => ({
+//   content: 'Pull Down To Refresh',
+//   height: 60,
+//   autoRefresh: false,
+//   downContent: 'Pull Down To Refresh',
+//   upContent: 'Release To Refresh',
+//   loadingContent: 'Loading...',
+//   clsPrefix: 'xs-plugin-pulldown-'
+// })
 
 const pullupDefaultConfig = () => ({
-  content: 'Pull Up To Refresh',
+  content: '上拉加载更多',
   pullUpHeight: 60,
   height: 40,
   autoRefresh: false,
-  downContent: 'Release To Refresh',
-  upContent: 'Pull Up To Refresh',
-  loadingContent: 'Loading...',
+  downContent: '松开加载',
+  upContent: '上拉加载更多',
+  loadingContent: '加载中...',
   clsPrefix: 'xs-plugin-pullup-'
 })
+// const pullupDefaultConfig = () => ({
+//   content: 'Pull Up To Refresh',
+//   pullUpHeight: 60,
+//   height: 40,
+//   autoRefresh: false,
+//   downContent: 'Release To Refresh',
+//   upContent: 'Pull Up To Refresh',
+//   loadingContent: 'Loading...',
+//   clsPrefix: 'xs-plugin-pullup-'
+// })
 
 export default {
   name: 'scroller',
@@ -331,7 +350,9 @@ function pure (obj) {
 </script>
 
 <style>
+.xs-plugin-pulldown-container,
 .xs-plugin-pullup-container {
   text-align: center;
+  color: #fff;
 }
 </style>
