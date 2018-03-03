@@ -10,8 +10,9 @@
     transform: translate(-50%, -50%);
 
     background-color: @weuiDialogBackgroundColor;
-    text-align: center;
-    border-radius: 3px;
+    //text-align: center;
+    //border-radius: 3px;
+    border-radius: 10px;
     overflow: hidden;
 }
 .weui-dialog__hd {
@@ -152,18 +153,16 @@
 
 /* Andy add */
 .weui-dialog{
-  background-color: #2C2C2C;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 .weui-dialog .vux-x-input{
   color: #fff;
 }
 .weui-dialog .dialogHeader{
-  color: #fff;
   font-size: 15px;
   font-weight: 300;
   display: flex;
-  background-color: #383735;
+  background-color: #F5F5F5;
   line-height: 35px;
   position: relative;
   padding: 8px;
@@ -178,7 +177,7 @@
 .weui-dialog .dialogHeader span.close{
   position: absolute;
   right: 0;
-  width: 16px;
+  width: 20px;
   //background: url('/static/img/close.png') center no-repeat;
   //background-size: 16px;
   color: #fff;
@@ -199,7 +198,8 @@
   border: none;
 }
 .weui-dialog .mainButton button{
-  border-radius: unset;
+  //border-radius: unset;
+  border-radius: 0 0 10px 10px;
 }
 .weui-dialog__btn{
   color: #fff;
