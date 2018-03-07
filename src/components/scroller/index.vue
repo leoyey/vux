@@ -353,6 +353,5 @@ function pure (obj) {
 .xs-plugin-pulldown-container,
 .xs-plugin-pullup-container {
   text-align: center;
-  color: #fff;
 }
 </style>
