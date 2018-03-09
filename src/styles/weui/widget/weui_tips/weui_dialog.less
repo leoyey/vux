@@ -18,7 +18,8 @@
 .weui-dialog__hd {
     //padding: 1.3em @weuiDialogGapWidth .5em;
     padding: 0 14px;
-    background-color: #403E3C;
+    background-color: #F5F5F5;
+    //background-color: #403E3C;
     &.with-no-content {
       padding: 1.7em @weuiDialogGapWidth;
     }
@@ -26,7 +27,7 @@
 .weui-dialog__title {
     //font-weight: 400;
     //font-size: 18px;
-    color: #fff;
+    //color: #fff;
     font-size: 15px;
     line-height: 40px;
     font-weight: 300;
@@ -55,6 +56,10 @@
     font-size: 16px;
     font-weight: 300;
     display: flex;
+    /* andy */
+    border-radius: 50px;
+    overflow: hidden;
+    /* ---- */
     &:after {
         content: " ";
         .setTopLine(@weuiDialogLineColor);
@@ -153,7 +158,7 @@
 
 /* Andy add */
 .weui-dialog{
-  border-radius: 10px;
+  border-radius: 10px 10px 25px 25px;
 }
 .weui-dialog .vux-x-input{
   color: #fff;
@@ -199,7 +204,7 @@
 }
 .weui-dialog .mainButton button{
   //border-radius: unset;
-  border-radius: 0 0 10px 10px;
+  border-radius: 30px;
 }
 .weui-dialog__btn{
   color: #fff;
@@ -208,7 +213,9 @@
   background-color: #E9514A;
 }
 .weui-dialog__btn.cancel{
-  background-color: #403E3C;
+  background-color: #E9514A;
+  border-right: 1px solid rgba(255,255,255,.5);
+  //background-color: #403E3C;
 }
 .weui-dialog__ft:after{
   border: none;
